@@ -1,7 +1,27 @@
 aid: shotwellai
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/shotwellai.png
 name: Shotwellai
-description: Shotwellai is a company surfaced as a portfolio company of y-combinator and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Shotwell AI is a Y Combinator-backed startup building an observability
+  and annotation layer for robotics training data. Its pipeline ingests raw teleoperation
+  video, robot logs, and multimodal sensor streams, then uses models to watch every
+  frame, segment continuous motion into discrete actions, and label each action against
+  a customer's task definition and SOP rubric. Every label is quality-scored and returned
+  in hours rather than weeks, producing dense, frame-accurate, training-ready datasets
+  for robot manipulation, deformable/folding tasks, teleoperation episode QA, and
+  vision-language-action (VLA) foundation-model post-training. As of enrichment the
+  company exposes only a marketing website and a sales contact (hello@shotwell.ai);
+  no public API, developer portal, documentation, or SDKs were found.
 url: https://raw.githubusercontent.com/api-evangelist/shotwellai/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +31,31 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Robotics
+- Data Annotation
+- Training Data
+- Machine Learning
+- Computer Vision
+- Artificial Intelligence
+- Y Combinator
 apis: []
+common:
+- type: Website
+  url: https://shotwell.ai
+- type: GitHubOrganization
+  url: https://github.com/shotwellai
+- type: Support
+  url: mailto:hello@shotwell.ai
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 0
+  pass: local-v1
